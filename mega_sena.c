@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 07:52:16 by dbessa            #+#    #+#             */
-/*   Updated: 2023/12/27 15:03:03 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/12/27 15:12:23 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ int	main(void)
 		scanf(" %c", &redo);
 		if (redo == 'y' || redo == 'Y')
 			system("clear");
+		else
+			printf("Boa sorte nos jogos!");
 	}
 	return (0);
 }

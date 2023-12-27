@@ -7,13 +7,13 @@ OUT = lottery-numbers-maker
 
 all: $(OUT)
 	@rm -f $(OBJ) > /dev/null
-	./$(OUT)
+	@./$(OUT)
 
 $(OUT): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $^
+	@$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c $(HEADER)
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	@rm -f $(OBJ) > /dev/null
