@@ -6,7 +6,7 @@
 /*   By: dbessa <dbessa@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/27 07:52:16 by dbessa            #+#    #+#             */
-/*   Updated: 2023/12/27 14:31:56 by dbessa           ###   ########.fr       */
+/*   Updated: 2023/12/27 15:03:03 by dbessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int	main(void)
 {
-	int				c;
 	int				bet_count;
 	unsigned int	bets_num;
 	char			redo;
@@ -23,7 +22,6 @@ int	main(void)
 	while (redo == 'y' || redo == 'Y')
 	{
 		bet_count = 1;
-		c = 0;
 		srand(time(NULL));
 		welcome();
 		bets_num = how_many_bets();
