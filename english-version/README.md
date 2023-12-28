@@ -1,11 +1,11 @@
-# Bessa-Sena
+# Lotto-num
 I wanted to bet in lottery and didn't know which numbers use... so I did this program
 
-This is the pt-br version of program, if you want to try in english go to:
+This is the english version of the program, if you want to try in portuguese, go to root.
 
 ## The Program
 
-Bessa-sena is a random number generator program that helps you to choose the numbers wanted for you to make your lottery bet (and help you get rich OR problably having fun trying to)
+Lotto-num is a random number generator program that helps you to choose the numbers wanted for you to make your lottery bet (and help you get rich OR problably having fun trying to)
 
 ## Running the program
 
