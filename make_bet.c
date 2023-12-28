@@ -33,9 +33,9 @@ int	*make_bet(int total_numbers)
 	i = 0;
     while (i < total_numbers)
     {
-        do {
-            num = random_number();
-        } while (check_number(num, total_bet, i));
+		num = random_number();
+		while (check_number(num, total_bet, i))
+			num = random_number();
         total_bet[i] = num;
         i++;
     }
