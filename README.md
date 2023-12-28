@@ -1,7 +1,7 @@
 # Bessa-Sena
 I wanted to bet in lottery and didn't know which numbers use... so I did this program
 
-This is the pt-br version of program, if you want to try in english go to:
+This is the pt-br version of program, if you want to try in english just click <a href="https://github.com/dwbessa/lottery-numbers-generator/tree/main/english-version">here</a>
 
 ## The Program
 
