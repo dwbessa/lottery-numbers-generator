@@ -31,14 +31,14 @@ int	*make_bet(int total_numbers)
 	if (total_bet == NULL)
 		return (0);
 	i = 0;
-    while (i < total_numbers)
-    {
+	while (i < total_numbers)
+	{
 		num = random_number();
 		while (check_number(num, total_bet, i))
 			num = random_number();
-        total_bet[i] = num;
-        i++;
-    }
+		total_bet[i] = num;
+		i++;
+	}
 	total_bet = sort_bet(total_bet, total_numbers);
 	return (total_bet);
 }

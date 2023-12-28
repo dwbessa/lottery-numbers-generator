@@ -1,9 +1,9 @@
 #ifndef MEGA_SENA_H
 # define MEGA_SENA_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <time.h>
 
 void			welcome(void);
 int				random_number(void);
