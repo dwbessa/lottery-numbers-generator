@@ -30,7 +30,7 @@ void	display_numbers(int bet_count, unsigned int total_numbers)
 
 	i = 0;
 	the_bet = make_bet(total_numbers);
-	printf("Aposta %u:\t", bet_count);
+	printf("\033[33mJogo %u:\033[0m\t", bet_count);
 	while (i < total_numbers)
 	{
 		printf("[%d]", the_bet[i]);
@@ -51,14 +51,14 @@ unsigned int	how_many_bets(void)
 	while (getchar() != '\n');
 	while (result == 0 || bets_num < 1 || bets_num > 10)
 	{
-		printf("Erro! Tente um número válido.\n");
+		printf("\033[31mErro!\033[0m Tente um número válido. \033[31m(máx.: 20)\033[0m\n");
 		result = scanf("%u", &bets_num);
 		while (getchar() != '\n');
 	}
 	if (bets_num == 1)
-		printf("\nFazendo %u aposta para você!\n\n", bets_num);
+		printf("\nFazendo \033[32m%u\033[0m aposta para você!\n\n", bets_num);
 	if (bets_num > 1)
-		printf("\nFazendo %u apostas para você!\n\n", bets_num);
+		printf("\nFazendo \033[32m%u\033[0m apostas para você!\n\n", bets_num);
 	return (bets_num);
 }
 
@@ -71,13 +71,13 @@ unsigned int	how_many_numbers(void)
 	while (getchar() != '\n');
 	while (result == 0 || (total_numbers < 1 || total_numbers > 20))
 	{
-		printf("Erro! Tente um número válido. (máx.: 20)\n");
+		printf("\033[31mErro!\033[0m Tente um número válido. \033[31m(máx.: 10)\033[0m\n");
 		result = scanf("%u", &total_numbers);
 		while (getchar() != '\n');
 	}
 	if (total_numbers == 1)
-		printf("\nOk! Cada aposta terá %u número.\n\n", total_numbers);
+		printf("\nOk! Cada aposta terá \033[32m%u\033[0m número.\n\n", total_numbers);
 	if (total_numbers > 1)
-		printf("\nOk! Cada aposta terá %u números.\n\n", total_numbers);
+		printf("\nOk! Cada aposta terá \033[32m%u\033[0m números.\n\n", total_numbers);
 	return (total_numbers);
 }
