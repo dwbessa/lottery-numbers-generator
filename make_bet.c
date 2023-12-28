@@ -1,4 +1,4 @@
-#include "mega_sena.h"
+#include "bessa_sena.h"
 
 int	*sort_bet(int *total_bet, int total_numbers)
 {

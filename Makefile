@@ -1,11 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-SRC = mega_sena.c make_bet.c mega_sena_utils.c
+SRC = bessa_sena.c make_bet.c bessa_sena_utils.c bessa_sena_messages.c
 OBJ = $(SRC:.c=.o)
-HEADER = mega_sena.h
+HEADER = bessa_sena.h
 OUT = lottery-numbers-maker
 
-all: $(OUT)
+default:
+
+bet: $(OUT)
 	@rm -f $(OBJ) > /dev/null
 	@./$(OUT)
 
@@ -22,5 +24,3 @@ fclean: clean
 	@rm -f $(OUT) > /dev/null
 
 re: fclean all
-
-bet: all
