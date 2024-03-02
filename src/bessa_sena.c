@@ -13,7 +13,7 @@ int	main(void)
 		system("clear");
 		bet_count = 1;
 		srand(time(NULL));
-		welcome(); //all functions without parameters is for program message or scanning from input
+		welcome();
 		choose_numbers();
 		total_numbers = how_many_numbers();
 		many_games();
