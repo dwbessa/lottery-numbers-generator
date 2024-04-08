@@ -2,7 +2,7 @@
 
 int	main(void)
 {
-	int				bet_count;
+	uint8_t				bet_count;
 	unsigned int	total_numbers;
 	unsigned int	bets_num;
 	char			redo;
