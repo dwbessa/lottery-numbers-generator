@@ -4,6 +4,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <time.h>
+# include <stdint.h>
 
 void			welcome(void);
 void			choose_numbers(void);
